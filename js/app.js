@@ -209,3 +209,23 @@ openBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   mobileNav.classList.toggle('openbnt')
 })
+
+
+// scrollTop
+
+const scrollTopBtn = document.querySelector('.backtotop');
+const scrollFunction = () => {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    scrollTopBtn.style.display = 'block';
+  } else {
+    scrollTopBtn.style.display = 'none';
+  }
+}
+
+window.onscroll = function () { scrollFunction() };
+
+//Got top
+scrollTopBtn.addEventListener('click', () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+})

@@ -88,6 +88,31 @@ li {
   width: 100%;
 }
 
+/* backtotop */
+
+.backtotop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  z-index: 9999;
+  border: none;
+  background-color: #ffa500;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  outline: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.backtotop:hover,
+.backtotop :focus {
+  background-color: #c0923d;
+  color: #002974;
+}
 /* Top Header Css */
 
 .top-header {
